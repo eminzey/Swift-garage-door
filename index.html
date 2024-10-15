@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swift Garage Door</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #eef2f5;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        
+        nav {
+            background-color: #333;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+        }
+        
+        nav ul li {
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        
+        .hero {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: url('garage_header.jpg') no-repeat center center;
+            background-size: cover;
+            padding: 40px;
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        
+        .hero h1 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 2.5em;
+            color: #ffffff;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+        
+        .hero p {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.5em;
+            color: #ffffff;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+        
+        .introduction {
+            background-color: #f9f9f9;
+            padding: 30px;
+            margin: 20px auto;
+            border-radius: 8px;
+            max-width: 800px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            font-size: 1.1em;
+            line-height: 1.8;
+            margin-top: 100vh;
+        }
+        
+        h2 {
+            color: #444;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            font-size: 2em;
+        }
+        
+        p {
+            color: #444;
+            line-height: 1.8;
+            text-align: justify;
+        }
+        
+        a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .services {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        
+        .service-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 250px;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+        }
+        
+        .service-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            alt: "Garage door service image";
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 30px;
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us (732-532-7182)</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero" id="home">
+        <h1>Swift Garage Doors</h1>
+        <p>Repair, Installation, and Service</p>
+    </div>
+
+    <!-- Introduction Section -->
+    <section class="introduction" id="about">
+        <h2>About Us</h2>
+        <p>
+            Welcome to Swift Garage Door, your trusted local garage door specialists in New Jersey. We are a family-owned, New Jersey-born company based in Central NJ, dedicated to providing <strong>affordable garage door repair</strong> and <strong>fast service</strong> to our community. With years of experience, our team understands the value of <strong>quick, reliable, and cost-effective garage door solutions</strong> for New Jersey homeowners and businesses. Whether you need <strong>garage door installation</strong>, <strong>emergency repair</strong>, or general maintenance, we’re here to deliver the high-quality service you deserve, at a price you can afford.
+        </p>
+        <p>
+            At Swift Garage Door, we pride ourselves on our reputation for exceptional customer service, honesty, and fast response times. Our services include <strong>spring repair</strong>, <strong>garage door openers repair and replacement</strong>, <strong>remotes repair, installation or programming</strong>, as well as door panel replacement and repair. If you’re looking for a <strong>New Jersey garage door company</strong> that offers local expertise, affordable rates, and reliable results, you’ve come to the right place. Let us help keep your garage door functioning smoothly and your home secure. We are available for same-day service and are committed to making sure that your garage door issues are resolved quickly and efficiently. For more information or to schedule an appointment, give us a call at <a href="tel:7325327182">732-532-7182</a>. We look forward to serving you!
+        </p>
+    </section>
+
+    <!-- Services Section -->
+    <div class="services" id="services">
+        <div class="service-card">
+            <img src="garage_repair.jpg" alt="Garage door repair service">
+            <h3>Garage Door Repair</h3>
+            <p>Fast and affordable repair services for all types of garage doors.</p>
+        </div>
+        <div class="service-card">
+            <img src="garage_installation.jpg" alt="Garage door installation service">
+            <h3>Garage Door Installation</h3>
+            <p>Professional installation services for all garage door types.</p>
+        </div>
+        <div class="service-card">
+            <img src="garage_service.jpg" alt="Garage door maintenance service">
+            <h3>Garage Door Maintenance</h3>
+            <p>Regular maintenance to keep your garage door running smoothly.</p>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer id="contact">
+        <p>&copy; 2024 Swift Garage Door. All rights reserved.</p>
+        <p><a href="tel:7325327182" style="color: #87ceeb;">Call Us: 732-532-7182</a></p>
+        <p>Follow us on: <a href="#" style="color: #87ceeb;">Facebook</a> | <a href="#" style="color: #87ceeb;">Instagram</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+}
+
+.header-image {
+    width: 100%;
+    height: auto;
+    max-height: 400px; /* Optional, to control height */
+}
+
+h1 {
+    color: #333;
+}
